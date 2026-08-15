@@ -309,3 +309,6 @@ h3{
 .achievement-info h4 {
   color: #0b1b33 !important;
 }
+.achievement-card{
+  background:var(--navy);
+}
