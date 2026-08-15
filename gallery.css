@@ -272,3 +272,73 @@
     .gallery-item-title{ font-size:17px; }
     .gallery-overlay{ padding:14px; }
   }
+
+  .gallery-a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.photo-b {
+    flex: 0 0 calc(33.333% - 14px);
+    height: auto;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.photo-b img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.corner-c {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .gallery-a {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .photo-b {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 350px;
+        height: auto;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .gallery-a {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .photo-b {
+        flex: 1 1 100%;
+        min-width: 0;
+        height: auto;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 400px) {
+
+    .photo-b {
+        height: auto;
+        border-radius: 12px;
+    }
+}
