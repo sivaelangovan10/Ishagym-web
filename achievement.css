@@ -309,6 +309,15 @@ h3{
 .achievement-info h4 {
   color: #0b1b33 !important;
 }
-.achievement-card{
-  background:var(--navy);
+.achievement-card,
+.mission-card {
+  background: #0b1b33;
+  color: #ffffff;
+}
+
+.achievement-card h4,
+.achievement-card p,
+.mission-card h3,
+.mission-card p {
+  color: #ffffff;
 }
