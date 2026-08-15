@@ -12,9 +12,7 @@
   --text-light: #b8c1d1;
   
 }
-body{
-  background:var(--navy);
-}
+
 
 .achievement-stat{
     background: var(--navy-light);
