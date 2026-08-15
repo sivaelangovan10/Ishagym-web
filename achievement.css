@@ -5,6 +5,12 @@
   --gold-dark: #e0a800;
   --white: #ffffff;
   --gray: #d1d5db;
+  
+  --navy: #0a162b;
+  --card: #101d35;
+  --white: #ffffff;
+  --text-light: #b8c1d1;
+  
 }
 
 
@@ -196,4 +202,235 @@ h3{
     .card-img{
         grid-template-columns: repeat(1,1fr);
     }
+}
+/* ================================
+   ACHIEVEMENT INFO
+================================ */
+
+.achievement-info {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.achievement-intro {
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+
+.achievement-intro h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.achievement-intro p {
+  color: #b8c1d1;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   MAJOR ACHIEVEMENTS
+================================ */
+
+.major-achievements h3 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.achievement-item {
+  padding: 28px;
+  background: #101d35;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-6px);
+  border-color: #ffffff;
+}
+
+.achievement-item h4 {
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.achievement-item p {
+  color: #aeb8c9;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* ================================
+   TRAINING MISSION
+================================ */
+
+.training-mission {
+  margin-top: 60px;
+  padding: 35px;
+  background: #101d35;
+  border-radius: 18px;
+  border-left: 4px solid #ffffff;
+}
+
+.training-mission h3 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.training-mission p {
+  color: #b8c1d1;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* ================================
+   VISION
+================================ */
+
+.academy-vision {
+  margin-top: 30px;
+  padding: 35px;
+  background: #101d35;
+  border-radius: 18px;
+}
+
+.academy-vision h3 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.vision-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.vision-points span {
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.vision-points span:hover {
+  background: #ffffff;
+  color: #0a162b;
+}
+
+.academy-vision p {
+  color: #b8c1d1;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* ================================
+   CLOSING
+================================ */
+
+.achievement-quote {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 20px;
+}
+
+.achievement-quote h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.achievement-quote p {
+  color: #b8c1d1;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .achievement-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .achievement-info {
+    margin-top: 35px;
+  }
+
+  .achievement-intro {
+    margin-bottom: 35px;
+  }
+
+  .achievement-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .achievement-item {
+    padding: 22px;
+  }
+
+  .achievement-item h4 {
+    font-size: 18px;
+  }
+
+  .training-mission,
+  .academy-vision {
+    padding: 25px 20px;
+  }
+
+  .training-mission h3,
+  .academy-vision h3 {
+    font-size: 22px;
+  }
+
+  .vision-points {
+    gap: 8px;
+  }
+
+  .vision-points span {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .achievement-quote {
+    margin-top: 40px;
+  }
+
 }
