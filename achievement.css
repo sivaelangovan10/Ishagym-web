@@ -207,7 +207,7 @@ h3{
    ACHIEVEMENT INFO
 ================================ */
 .achievement-item p {
-  color: #aeb8c9;
+  color: black;
   font-size: 15px;
   line-height: 1.7;
   margin: 0;
@@ -228,13 +228,13 @@ h3{
 }
 
 .achievement-quote h3 {
-  color: #ffffff;
+  color: black;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .achievement-quote p {
-  color: #b8c1d1;
+  color: black;
   font-size: 16px;
   letter-spacing: 0.5px;
 }
