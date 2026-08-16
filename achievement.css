@@ -219,7 +219,7 @@ h3{
   --white: #FFFFFF;
 
   background-color: var(--white);
-  padding: 60px 20px;
+  padding: 60px;
   overflow-x: hidden;
 }
 
